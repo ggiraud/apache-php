@@ -17,3 +17,7 @@ RUN rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 # Expose ports
 EXPOSE 80
+
+# start Apache server
+CMD /usr/sbin/apache2ctl -DFOREGROUND
+
